@@ -20,9 +20,18 @@
                 <img src="https://cdn.discordapp.com/badge-icons/df199d2050d3ed4ebf84d64ae83989f8.png" alt="Badge 3">
         
             </div>
-            <h3 class="status-text">🎮 Jogando EA SPORTS FC™ 24</h3>
+            <h3 class="status-text"></h3>
         </div>
     </div>
+    <div class="music-player">
+        <audio id="audio" autoplay loop>
+            <source src="audio/partoruamjnopulso.mp3.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+        </audio>
+        <button id="mute-btn">🔊</button>
+        <input type="range" id="volume-slider" min="0" max="1" step="0.1" value="1">
+    </div>
+    
     
     <script src="script.js"></script>
 </body>

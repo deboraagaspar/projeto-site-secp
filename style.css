@@ -34,7 +34,10 @@
         align-items: center;
         gap: 15px; /* Espaço entre a imagem e as informações */
         background: rgba(255, 255, 255, 0.1);
-        padding: 20px;
+        padding-top: 56px;
+        padding-left: 69px;
+        padding-right: 69px;
+        padding-bottom: 284px;
         border-radius: 10px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         backdrop-filter: blur(10px);
@@ -52,8 +55,8 @@
         border-radius: 50%;
         position: absolute;
         top: 0;
-        left: 0;
-        z-index: 2; /* Coloca o ícone na frente */
+        left: -31px;
+        z-index: 1; /* Coloca o ícone atrás */
     }
     
     .decoracao {
@@ -61,8 +64,8 @@
         height: 120px;
         position: absolute;
         top: -10px;
-        left: -10px;
-        z-index: 1; /* Mantém a decoração atrás do ícone */
+        left: -40px;
+        z-index: 2; /* Mantém a decoração na frente do ícone */
     }
     
     .info {
@@ -73,7 +76,7 @@
     }
     
     .nome {
-        font-size: 20px;
+        font-size: 30px;
         font-weight: bold;
     }
     
@@ -91,32 +94,33 @@
         font-size: 14px;
         color: #ddd;
     }
+
+    .music-player {
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        background: rgba(255, 255, 255, 0.1);
+        padding: 10px;
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+    
+    #mute-btn {
+        background: transparent;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+    }
+    
+    #volume-slider {
+        width: 80px;
+    }
+    
     
 
-    .buttons {
-
-        margin-top: 20px;
-        padding: 10px;
-
-    }
-
-    .btn {
-
-            background: black;
-            color: cyan;
-            border: 2px solid cyan;
-            border-radius: 15px;
-            padding: 10px 10px;
-            font-size: 16px;
-            cursor: pointer;
-            text-transform: uppercase;
-            transition: all 0.3s ease;
-            box-shadow: 0 0 5px cyan, 0 0 10px cyan;
-        }
-        
-    .btn:hover {
-            background: cyan;
-            color: black;
-            box-shadow: 0 0 20px cyan, 0 0 40px cyan;
-        
-    }
+ 
